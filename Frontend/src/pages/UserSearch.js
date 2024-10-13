@@ -58,7 +58,7 @@ function UserSearch() {
     try {
       // Adjust the search URL based on the selected search type
       const response = await axios.get(
-        `http://localhost:5000/search-users?query=${query}&type=${searchType}`,
+        `http://localhost:5555/search-users?query=${query}&type=${searchType}`,
         { withCredentials: true }
       );
       setSearchResults(response.data);
@@ -178,7 +178,7 @@ function UserSearch() {
                   <Image
                     src={
                       user.profile_image
-                        ? `http://localhost:5000/uploads/${user.profile_image}`
+                        ? `http://localhost:5555/uploads/${user.profile_image}`
                         : defaultProfileImage
                     }
                     alt={user.username}

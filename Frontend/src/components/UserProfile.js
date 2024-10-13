@@ -26,12 +26,12 @@ const UserProfile = () => {
   React.useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/user", {
+        const response = await axios.get("http://localhost:5555/user", {
           withCredentials: true,
         });
         const userProfileImage = response.data.profile_image;
         if (userProfileImage) {
-          const imageUrl = `http://localhost:5000/uploads/${userProfileImage}`;
+          const imageUrl = `http:///uploads/${userProfileImage}`;
           setProfileImage(imageUrl);
         } else {
           setProfileImage(defaultProfileImage);
@@ -48,7 +48,7 @@ const UserProfile = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/logout",
+        "http://localhost:5555/logout",
         {},
         { withCredentials: true }
       );

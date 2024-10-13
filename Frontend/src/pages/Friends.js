@@ -12,7 +12,7 @@ function FriendsList() {
   // Function to fetch friends from the server
   const fetchFriends = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/friends-list", {
+      const response = await axios.get("http://localhost:5555/friends-list", {
         withCredentials: true,
       });
       setFriends(response.data);
@@ -25,7 +25,7 @@ function FriendsList() {
   const removeFriend = async (friendId) => {
     try {
       await axios.post(
-        `http://localhost:5000/remove-friend/${friendId}`,
+        `http://localhost:5555/remove-friend/${friendId}`,
         {},
         { withCredentials: true }
       );

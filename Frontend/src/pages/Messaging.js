@@ -10,7 +10,7 @@ function Messaging({ friendId }) {
   const fetchMessages = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/get-messages?friend_id=${friendId}`,
+        `http://localhost:5555/get-messages?friend_id=${friendId}`,
         {
           withCredentials: true,
         }
@@ -28,7 +28,7 @@ function Messaging({ friendId }) {
     }
     try {
       await axios.post(
-        "http://localhost:5000/send-message",
+        "http://localhost:5555/send-message",
         {
           receiver_id: friendId,
           content: newMessage,

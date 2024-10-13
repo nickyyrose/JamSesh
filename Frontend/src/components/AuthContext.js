@@ -12,7 +12,7 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     const checkAuthStatus = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/check_login", {
+        const response = await axios.get("http://localhost:5555/check_login", {
           withCredentials: true,
         });
 
@@ -34,7 +34,7 @@ const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/login",
+        "http://localhost:5555/login",
         {
           email,
           password,
@@ -56,7 +56,7 @@ const AuthProvider = ({ children }) => {
   const logout = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/logout",
+        "http://localhost:5555/logout",
         {},
         {
           withCredentials: true,

@@ -9,7 +9,7 @@ function IncomingFriendRequests() {
     const fetchIncomingRequests = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/incoming-friend-requests",
+          "http://localhost:5555/incoming-friend-requests",
           {
             withCredentials: true,
           }
@@ -26,7 +26,7 @@ function IncomingFriendRequests() {
   const acceptFriendRequest = async (requestId) => {
     try {
       await axios.post(
-        `http://localhost:5000/accept-friend-request/${requestId}`,
+        `http://localhost:5555/accept-friend-request/${requestId}`,
         {},
         { withCredentials: true }
       );

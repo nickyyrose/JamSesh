@@ -25,7 +25,7 @@ function UserProfiles() {
     const fetchUserProfile = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/user-profile/${userId}`,
+          `http://localhost:5555/user-profile/${userId}`,
           {
             withCredentials: true,
           }
@@ -43,7 +43,7 @@ function UserProfiles() {
     const fetchFriendshipStatus = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/friendship-status/${userId}`,
+          `http://localhost:5555/friendship-status/${userId}`,
           {
             withCredentials: true,
           }
@@ -87,7 +87,7 @@ function UserProfiles() {
   const handleFriendRequest = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/send-friend-request",
+        "http://localhost:5555/send-friend-request",
         { friend_id: user.id },
         { withCredentials: true }
       );
@@ -122,7 +122,7 @@ function UserProfiles() {
             <Image
               src={
                 user.profile_image
-                  ? `http://localhost:5000/uploads/${user.profile_image}`
+                  ? `http://localhost:5555/uploads/${user.profile_image}`
                   : defaultProfileImage
               }
               alt="Profile"

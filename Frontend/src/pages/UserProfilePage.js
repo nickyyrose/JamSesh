@@ -26,7 +26,7 @@ const UserProfilePage = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/user", {
+        const response = await axios.get("http://localhost:5555/user", {
           withCredentials: true,
         });
         setUser(response.data);
@@ -121,7 +121,7 @@ const UserProfilePage = () => {
               <Image
                 src={
                   user.profile_image
-                    ? `http://localhost:5000/uploads/${user.profile_image}`
+                    ? `http://localhost:5555/uploads/${user.profile_image}`
                     : defaultProfileImage
                 }
                 alt="Profile"
