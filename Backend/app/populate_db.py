@@ -5,7 +5,7 @@ from .models import Genre, Instrument
 def populate_database():
     genres = [
         "Rock", "Pop", "Jazz", "Classical", "Hip-Hop",
-        "Electronic", "Country", "R&B", "Blues", "Folk"
+        "Electronic", "Country", "R&B", "Blues", "Folk", "Comedy"
     ]
     
     instruments = [

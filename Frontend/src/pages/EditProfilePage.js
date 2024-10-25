@@ -104,13 +104,13 @@ const EditProfilePage = () => {
     <Box
       minHeight="100vh"
       bgGradient="linear(to-b, #2D3748, #000000)"
-      color="white"
+      color="grey"
       p={6}
       display="flex"
       alignItems="center"
       justifyContent="center"
     >
-      <Container maxW="container.md" bg="gray.800" p={6} borderRadius="md">
+      <Container maxW="container.md" bg="grey.800" p={6} borderRadius="md">
         <Heading mb={6}>Edit Profile</Heading>
         <form onSubmit={handleSubmit}>
           <VStack spacing={4} align="stretch">
@@ -138,7 +138,7 @@ const EditProfilePage = () => {
                 options={genreOptions}
                 value={genres}
                 onChange={(selectedOptions) => setGenres(selectedOptions)}
-                placeholder="Select your favorite genres"
+                placeholder="Select your genres"
               />
             </FormControl>
             <FormControl id="instruments">

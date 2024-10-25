@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+JamSesh is a social networking app for musicians with the intent of connecting for collaboration purposes!
+Find musicians based on what type of instruments and genres they specialize in!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To run the app, navigate to /backend in the terminal and run "python run.py" and in a seperate terminal navigate to /frontend and run "npm start" 
 
-## Available Scripts
+You now have the ability to register a profile with your email, and login once you've successfully done so.
 
-In the project directory, you can run:
+From your main page, you have the option to write a bio about yourself, stating your intentions for connecting, add a profile picture, list the instruments and genres you play. It is strongly recommended that you list any specific musical interests or accomplishments! 
 
-### `npm start`
+In the main navigation bar, you also have the option to "search" for users based on 3 different options, specifically by name, or by two dropdown menus, one for "instrument" and one for "genre" 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clicking on a user will take you to their profile, where you can view their specific details they wish to share. You have the ability to send them a friend request. When friend requests are accepted, you are then able to privately send messages between each other. For any reason, you may also remove that person from your personal friends list, and will no longer be able to send or receive messages between the two of you. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This is a simple and straightforward social network that anyone can utilize, and will continue to grow in features. 
